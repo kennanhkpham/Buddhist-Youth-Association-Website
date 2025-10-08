@@ -11,7 +11,7 @@ html, body {
 
 .hoa_sen {
     border-radius: 110px 110px 110px 110px;
-    width: 80px;
+    width: 160px;
     height: auto;
     z-index: 2;
 }
@@ -40,26 +40,31 @@ header img {
 
 /* Title */
 header h1 {
-  font-size: 2rem;
-  font-weight: 700;
+  font-size: 5rem;
+  font-weight: 800;
   letter-spacing: 1px;
-  margin-top: 0.5rem;
+  font-family: Montserrat;
 }
+
+
 
 /* Subtitle (BI - TRI - DUNG) */
 header p {
   font-style: italic;
-  font-size: 1.1rem;
-  margin: 0.3rem 0 1rem;
+  font-size: 3rem;
+  font-weight: 700;
   color: #f9f9f9;
+  font-family:Montserrat;
 }
 
 /* Navigation bar */
 nav {
   display: flex;
   justify-content: center;
+  font-size: 2rem;
   flex-wrap: wrap;
-  gap: 1.5rem;
+  gap: 8rem;
+  font-family:Montserrat;
 }
 
 nav a {

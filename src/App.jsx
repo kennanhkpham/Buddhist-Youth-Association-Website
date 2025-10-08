@@ -34,7 +34,7 @@ export default function App() {
           <h1 className="text-2xl font-bold tracking-wide">
               GIA ĐÌNH PHẬT TỬ TỪ ĐÀM
             </h1>
-            <p className="italic text-lg mt-1">BI - TRÍ - DŨNG</p>
+            <p className="subtitle-below">BI - TRÍ - DŨNG</p>
 
           <nav className="flex justify-center mt-4 space-x-6 text-sm font-medium">
             <Link to="/apply" className="hover:text-yellow-300">Apply to Join</Link>
