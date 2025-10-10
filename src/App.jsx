@@ -9,6 +9,8 @@ import Photos from "./components/Photos.jsx";
 import Volunteer from "./components/Volunteer.jsx";
 import About from "./components/About.jsx";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import Carousel from "/src/Carousel.jsx";
+
 
 
 export default function App() {
@@ -20,7 +22,6 @@ export default function App() {
         {/* Header Section (remains visible on all routes) */}
         <header className="bg-green-900 text-white text-center py-4 w-full">
           
-          {/* 👇 FIX: Wrap the logo and title area in a <Link to="/"> tag 👇 */}
           <Link to="/" className="text-white hover:text-white hover:no-underline block">
             <div  className="flex justify-center mb-3 mt-2">
                 <img
@@ -46,16 +47,6 @@ export default function App() {
           </nav>
         </header>
         <Routes>
-          {/* 1. The default (home) route "/" renders the original content (Hero Image) */}
-          <Route path="/" element={
-            <section className="relative w-full flex-grow">
-              <img
-                src={phatdanImg}
-                alt="Temple Event"
-                className="w-full h-[calc(100vh-150px)] object-cover" // ✅ fills rest of viewport
-              />
-            </section>
-          } />
           
           <Route path="/apply" element={<Apply />} />
           <Route path="/events" element={<Events />} />
@@ -64,6 +55,10 @@ export default function App() {
           <Route path="/photos" element={<Photos />} />
           <Route path="/about" element={<About />} />
         </Routes>
+        
+        <Carousel/>
+
+
       </div>
     </Router>
   );
