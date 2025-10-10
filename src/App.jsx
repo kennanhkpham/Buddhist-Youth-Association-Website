@@ -47,7 +47,7 @@ export default function App() {
           </nav>
         </header>
         <Routes>
-          
+          <Route path="/" element={<Carousel />} />
           <Route path="/apply" element={<Apply />} />
           <Route path="/events" element={<Events />} />
           <Route path="/volunteer" element={<Volunteer />} />
@@ -55,9 +55,7 @@ export default function App() {
           <Route path="/photos" element={<Photos />} />
           <Route path="/about" element={<About />} />
         </Routes>
-        
-        <Carousel/>
-
+      
 
       </div>
     </Router>
