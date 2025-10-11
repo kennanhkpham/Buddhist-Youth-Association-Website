@@ -1,13 +1,21 @@
-import '/src/components/components.css'
+import '/src/components/About.css'
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import React from 'react';
-
+import aboutImage from '../pictures/gallery-2023-9.jpg'; 
+    
 export default function About() {
+
     return (
         <section className="about-page-content p-8 md:p-12 lg:p-16 text-center text-gray-800">
             
+            
             {/* --- Our Mission Section --- */}
             <div className="mission-section mb-12">
+                <img 
+                    src={aboutImage} // Use the imported variable
+                    alt="A serene Buddha statue symbolizing our mission." // Always include descriptive alt text
+                    className="about-image"
+                />
                 <h2 className="text-4xl font-extrabold mb-6 text-green-900 border-b-4 border-yellow-500 inline-block px-4 pb-2">
                     Our Mission
                 </h2>
@@ -43,11 +51,11 @@ export default function About() {
                     Come be a part of something greater! 🌟
                 </p>
                 {/* Placeholder button, assuming this links to /apply or a custom apply form */}
-                <Link to="/apply" className="hover:text-yellow-300">Click Here To Join Our Family</Link>
+                <Link to="/apply" className="hover:text-yellow-300">Click Here To Join</Link>
             </div>
             
             <hr className="my-12 border-t-2 border-gray-300 max-w-lg mx-auto" />
-
+            
             {/* --- Leadership Section (Matches structure in video) --- */}
             <div className="leadership-section mb-12">
                 <h2 className="text-4xl font-extrabold mb-8 text-green-900 border-b-4 border-yellow-500 inline-block px-4 pb-2">

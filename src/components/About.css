@@ -1,0 +1,197 @@
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  align-content: center;
+  justify-content: center;
+}
+
+.hoa_sen {
+    border-radius: 110px 110px 110px 110px;
+    width: 160px;
+    height: auto;
+    z-index: 2;
+}
+
+/* Apply a calm, elegant feel */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #ffffff;
+}
+
+/* Header section */
+header {
+  background-color: #0b3d0b; /* deep temple green */
+  color: #fff;
+  text-align: center;
+  padding: 2rem 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  /* Ensure the header stretches full width */
+  width: 100%;
+}
+
+/* Logo image */
+header img {
+  filter: drop-shadow(0 1px 1px rgba(255, 255, 255, 0.3));
+}
+
+/* Title */
+header h1 {
+  font-size: 4rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  font-family: Montserrat;
+}
+
+
+
+/* Subtitle (BI - TRI - DUNG) */
+header p {
+  font-style: italic;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #f9f9f9;
+  font-family:Montserrat;
+}
+
+/* Navigation bar */
+nav {
+  display: flex;
+  justify-content: center;
+  font-size: 1.5rem;
+  flex-wrap: wrap;
+  gap: 5rem;
+  font-family:Montserrat;
+}
+
+nav a {
+  color: #f4f4f4;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.3s, transform 0.3s;
+}
+
+nav a:hover {
+  color: #ffd700; /* golden highlight */
+  transform: scale(1.05);
+}
+
+/* Hero image */
+section img {
+  width: 100%;
+  height: 520px;
+  object-fit: cover;
+  display: block;
+  border-top: 4px solid #0b3d0b;
+}
+
+about-image {
+  width: 100%;
+  max-width: 600px; /* Limit the maximum width */
+  height: auto;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive text adjustments */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.6rem;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+
+  nav {
+    gap: 0.8rem;
+  }
+
+  section img {
+    height: 320px;
+  }
+}
+
+/* Optional subtle page fade-in */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+header, section {
+  animation: fadeIn 0.8s ease-out;
+}
+
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* App.css */
+/* ... (existing styles) ... */
+
+/* New styles for the content area of pages like About.jsx */
+.content-section {
+    padding: 3rem 1rem; /* Add padding around the content */
+    max-width: 1000px; /* Limit width for readability */
+    margin: 0 auto; /* Center the content block itself */
+    text-align: center; /* ⭐ THIS CENTERS ALL INLINE TEXT ⭐ */
+}
+
+/* Ensure list items are left-aligned within the centered block */
+.content-section ul {
+    display: inline-block; /* Makes the list take up only the required width */
+    text-align: left; /* Aligns the text inside the list items to the left */
+    padding-left: 0; /* Remove default list padding */
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+/* Style the buttons (if not using Tailwind) */
+.content-section button {
+    /* Basic button styling */
+    background-color: #0b3d0b; 
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.content-section button:hover {
+    background-color: #ffd700;
+    color: #0b3d0b;
+}
+
+/* New style for main headings */
+.content-section h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: #0b3d0b;
+    border-bottom: 3px solid #ffd700;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+section{
+    width: 100%;
+    height: 520px;
+    object-fit: cover;
+    display: block;
+    text-align: center;
+    font-family: Montserrat;
+}
