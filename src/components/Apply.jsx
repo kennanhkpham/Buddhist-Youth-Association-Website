@@ -17,7 +17,13 @@ export default function Apply() {
               GĐPT Registration Form
           </h2>
           <p className="text-green-200 mt-2 text-lg">
-            Complete the form below to join the community.
+            We welcome individuals who are interested in
+             deepening their spiritual practice and becoming 
+             a part of our vibrant community. By joining our temple,
+              you will have the opportunity to engage in meaningful 
+              activities, learn Buddhist teachings, and contribute 
+              to the well-being of our community. We invite you to apply 
+              and begin your spiritual journey with us.
           </p>
 
     

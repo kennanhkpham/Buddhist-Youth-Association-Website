@@ -6,10 +6,7 @@ const ADMIN_PASSWORD = "lotus009";
 export default function Events() {
     // State to hold the list of events
     const [events, setEvents] = useState([
-        { id: 1, title: "Tết Nguyên Đán Celebration", date: "February 10, 2026", description: "Annual Lunar New Year celebration with traditional food and performances." },
-        { id: 2, title: "Vesak Day Retreat", date: "May 20, 2026", description: "A day of meditation and reflection to celebrate the Buddha's birth, enlightenment, and passing." },
-        { id: 3, title: "Summer Camp 2026 Planning", date: "June 15, 2026", description: "Volunteer meeting to organize the annual summer camp activities and logistics." },
-    ]);
+        { id: 1, title: "Chùa Sinh Hoạt", date: "Every Sunday from 12:00 - 3:30pm", description: "Our Buddhist Youth Asoociation meets up every sunday to Learn Vietnamese, Buddhism, and do activities that will benefit the members in the long run. " },]);
 
     // State to manage authorization for adding/editing events
     const [isAuthorized, setIsAuthorized] = useState(false);
@@ -188,14 +185,6 @@ export default function Events() {
 
     return (
         <div className="min-h-screen flex flex-col bg-gray-50 w-full overflow-x-hidden">
-            
-            {/* --- Header Section --- */}
-            <header className="bg-green-800 text-white py-12 shadow-xl">
-                <div className="max-w-4xl mx-auto px-4">
-                    <h1 className="text-5xl font-extrabold tracking-tight">Upcoming Events</h1>
-                    <p className="text-green-200 mt-2 text-xl">Join us for mindfulness, service, and community activities.</p>
-                </div>
-            </header>
             
             {/* --- Main Event List Section --- */}
             <section className="flex-grow py-12 px-4">
