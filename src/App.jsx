@@ -1,6 +1,5 @@
 import React from "react";
 import "/src/App.css";
-import phatdanImg from "./pictures/2024phatdan1.png"; // ✅ import the image
 import hoaSen from "./pictures/hoa_sen.png"; // ✅ import the image
 import Apply from "./components/Apply.jsx";
 import Activities from "./components/Activites.jsx";
